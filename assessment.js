@@ -24,13 +24,13 @@ return "Hello World!";
 */
 
 function lambdaSchool(num) {
-if (num%3===0 && num%5===0){
+if (num % 3===0 && num % 5===0){
   return "Lambda School";
-} else if (num%5===0){
+} else if (num % 5===0){
   return "School";
-} else if (num%3===0) {
+} else if (num % 3===0) {
   return "Lambda";
-} else if (num%3 != 0 ||num%5 != 0) {
+} else if (num % 3 != 0 ||num % 5 != 0) {
   return num;
 }
 }
@@ -46,8 +46,10 @@ if (num%3===0 && num%5===0){
              longestString(['JavaScript', 'HTML', 'CSS']); // returns 'JavaScript'
 */
 
-function longestString() {
-
+function longestString(strs) {
+for (let i = 0; i < strs.length; i++) {
+  
+}
 }
 
 /*
