@@ -47,9 +47,13 @@ if (num % 3===0 && num % 5===0){
 */
 
 function longestString(strs) {
-for (let i = 0; i < strs.length; i++) {
-  
-}
+  let longest = "";
+  strs.forEach(element => {
+    if(element.length > longest.length) {
+      longest = element;
+    }
+  });
+  return longest;
 }
 
 /*
