@@ -77,8 +77,12 @@ function longestString(strs) {
              computeUserAverageAge(users); // returns 62 (This number is rounded up from 61.6666)
 */
 
-function computeUserAverageAge() {
-
+function computeUserAverageAge(users) {
+ let sum = 0;
+ for (let i = 0; i < users.length; i++) {
+   sum += users[i].age;
+ }
+ return Math.round(sum/users.length)
 }
 
 module.exports = {
